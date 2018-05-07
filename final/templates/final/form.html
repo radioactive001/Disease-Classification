@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h4 class="center-align red lighten-3">Disease Categorization</h4>
+
+<hr>
+
+<div class="row">
+	<div class="col-md-5">
+		<form method="POST"> {% csrf_token %}
+			<div class="form-group">
+				<label for="exampleInputMessege"><h4>Disease Symtoms</h4></label>
+				<textarea type="messege" class="form-control" id="exampleInputMessege" name="exampleInputMessege" placeholder="Tell us about your disease symtoms" style="font-size: 20px; height: 150px"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Classify</button>
+		</form>
+		<br>
+	</div>
+	<!-- <div class="col-md-5 col-md-offset-2">
+		<p>Your Symtoms looks like you are suffering from </p>
+		<form>
+			<div class="form-group">
+				<label for="exampleInputMessege">Category</label>
+				<textarea type="messege" class="form-control" id="exampleInputMessege" rows="5"></textarea>
+			</div>
+		</form>
+	</div> -->
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Compiled and minified CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  	{% load static %}
+  	<link rel="stylesheet" type="text/css" href="{% static 'percircle.css' %}">
+
+	<title>Check Your Disease</title>
+</head>
+
+<body>
+	<header class="container center-align">
+		<h3>Text Classification Using Convolutional Neural Network</h3>
+	</header>
+	<div class="container">
+		{% block content %}
+		{% endblock %}
+
+		<!-- <a style="display:block" class="center-align" href="/admin">Admin Login</a> -->
+	</div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'percircle.js' %}"></script>
+
+<script type="text/javascript">
+    $(function(){
+        $("#bluecircle").percircle();
+    });
+</script>
+
+</html>
