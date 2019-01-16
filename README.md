@@ -25,3 +25,17 @@ After clonging the project and installing all the deppendecies, Open the command
 ```
 python manage.py runserver
 ```
+## Description
+
+After running the command, the model will start training and show the delta value after every 10000 iterations. we can observe the value decresing gradually.
+
+
+<img src="images/Disease-catagorization-1.JPG" >
+
+By openning the web browser and navigating to the server we will be greeted by the following page.
+
+<img src="images/Disease-catagorization-2.JPG" >
+
+If we enter some syptoms it will identfy the disese with probable accuraccy as following.
+
+<img src="images/Disease-catagorization-3.JPG" >
